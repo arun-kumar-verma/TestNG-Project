@@ -1,5 +1,5 @@
 page\Login.class
 initial_steps\SignUp.class
-page\Home.class
-base\Base.class
+base\Basetest.class
+page\HomeTest.class
 test_utility\Test_Utility.class

@@ -7,12 +7,30 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>project.maven</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
+  <build>
+        <!-- Source directory configuration -->
+      
+        <plugins>
+            <!-- Following plugin executes the testng tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <!-- Suite testng xml file to consider for test execution -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <!-- Compiler plugin configures the java version to be usedfor compiling 
+                the code -->
+        </plugins>
+    </build>
+    <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
   <dependencies>
     <dependency>
     	<groupId>junit</groupId>
@@ -56,6 +74,11 @@
     <artifactId>poi-ooxml-schemas</artifactId>
     <version>LATEST</version>
 </dependency>
+<dependency>
+ <groupId>com.apple</groupId>
+  <artifactId>AppleJavaExtensions</artifactId> 
+  <version>1.4</version>
+   </dependency>
   
   </dependencies>
 </project>

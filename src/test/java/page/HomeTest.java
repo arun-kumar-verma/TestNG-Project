@@ -8,7 +8,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Home extends test_utility.Test_Utility{
+import test_utility.Test_Utility;
+
+
+public class HomeTest extends Test_Utility{
 	@Parameters({"URL","Browser"})
 	@BeforeTest
 	public void initialize(String url, String browser)
@@ -18,7 +21,7 @@ public class Home extends test_utility.Test_Utility{
 		driver.get(url);
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void homepage() {		
 		//to verify home page URL
 		String currentURL=driver.getCurrentUrl();

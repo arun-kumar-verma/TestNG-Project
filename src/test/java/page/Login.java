@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Login extends base.Base{
+public class Login extends base.Basetest{
 	
 	@Parameters({"Username","Password"})
 	@Test

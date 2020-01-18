@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
-public class Base {
+public class Basetest {
 	public static WebDriver driver;
 	public WebElement element;
 	public void openbrowser(String url, String browser) {

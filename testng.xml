@@ -9,8 +9,8 @@
   <test name="Browser and URl opening">
 
   	<classes>
-  	<class name="page.Home"/>
-	<class name="page.Login"/> 
+  	<class name="page.HomeTest"/>
+
   	
   	</classes>
   </test> <!-- Test -->
