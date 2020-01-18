@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+<parameter name="URL" value="https://test.salesforce.com/"/>
+<parameter name="Browser" value="Chrome"/>
+<parameter name="Username" value="priyanka@aesl.in.qa"/>
+<parameter name="Password" value="Saasforce@123"/>
+
+  <test name="Browser and URl opening">
+
+  	<classes>
+  	<class name="page.Home"/>
+	<class name="page.Login"/> 
+  	
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

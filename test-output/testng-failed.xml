@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Suite]">
+  <parameter name="Username" value="priyanka@aesl.in.qa"/>
+  <parameter name="URL" value="http://www.test.salesforce.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <parameter name="Password" value="Saasforce@123"/>
+  <test thread-count="5" name="Browser and URl opening(failed)">
+    <classes>
+      <class name="page.Home">
+        <methods>
+          <include name="homepage"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- page.Home -->
+      <class name="page.Login">
+        <methods>
+          <include name="register" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- page.Login -->
+    </classes>
+  </test> <!-- Browser and URl opening(failed) -->
+</suite> <!-- Failed suite [TestNG Suite] -->
