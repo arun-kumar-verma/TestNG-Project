@@ -14,7 +14,7 @@ public class Login extends base.Basetest{
 //	WebDriverWait wait=new WebDriverWait(driver,60);
 	driver.findElement(By.xpath("//*[@id=\'username\']")).sendKeys(username);
 	driver.findElement(By.xpath("//*[@id='password']")).sendKeys(password);
-	driver.findElement(By.xpath("//*[@id=\'Login\']")).click();
+	driver.findElement(By.xpath("//*[@id=\'Login\']")).click() ;
 	
 	}
 	
